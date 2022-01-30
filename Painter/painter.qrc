@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/Painter">
+        <file>image/bleach.png</file>
+        <file>image/diskette.png</file>
+        <file>image/ellipse.png</file>
+        <file>image/folder.png</file>
+        <file>image/hello.png</file>
+        <file>image/line-segment.png</file>
+        <file>image/rectangle.png</file>
+        <file>image/page.png</file>
+    </qresource>
+</RCC>
