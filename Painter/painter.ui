@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PainterClass</class>
+ <widget class="QMainWindow" name="PainterClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Painter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>Сохранить как</string>
+     </property>
+     <addaction name="save_btn"/>
+    </widget>
+    <addaction name="create_btn"/>
+    <addaction name="open_btn"/>
+    <addaction name="menu_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Добавить</string>
+    </property>
+    <addaction name="create_oval"/>
+    <addaction name="create_rectangle"/>
+    <addaction name="create_triangle"/>
+    <addaction name="create_line"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Редактирование</string>
+    </property>
+    <addaction name="move_btn"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="create_oval"/>
+   <addaction name="create_rectangle"/>
+   <addaction name="create_triangle"/>
+   <addaction name="separator"/>
+   <addaction name="create_line"/>
+   <addaction name="move_btn"/>
+   <addaction name="separator"/>
+   <addaction name="open_btn"/>
+   <addaction name="save_btn"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="create_btn">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/page.png</normaloff>:/Painter/image/page.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="open_btn">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/folder.png</normaloff>:/Painter/image/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="save_btn">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/diskette.png</normaloff>:/Painter/image/diskette.png</iconset>
+   </property>
+   <property name="text">
+    <string>*.pmap</string>
+   </property>
+  </action>
+  <action name="create_oval">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/ellipse.png</normaloff>:/Painter/image/ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>Овал</string>
+   </property>
+  </action>
+  <action name="create_rectangle">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/rectangle.png</normaloff>:/Painter/image/rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Прямоугольник</string>
+   </property>
+  </action>
+  <action name="create_triangle">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/bleach.png</normaloff>:/Painter/image/bleach.png</iconset>
+   </property>
+   <property name="text">
+    <string>Треугольник</string>
+   </property>
+  </action>
+  <action name="create_line">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/line-segment.png</normaloff>:/Painter/image/line-segment.png</iconset>
+   </property>
+   <property name="text">
+    <string>Линия</string>
+   </property>
+  </action>
+  <action name="move_btn">
+   <property name="icon">
+    <iconset resource="painter.qrc">
+     <normaloff>:/Painter/image/hello.png</normaloff>:/Painter/image/hello.png</iconset>
+   </property>
+   <property name="text">
+    <string>Рука</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="painter.qrc"/>
+ </resources>
+ <connections/>
+</ui>
